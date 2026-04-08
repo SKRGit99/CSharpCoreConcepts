@@ -43,9 +43,6 @@ namespace CSharpCoreConcepts
 
             /*[1] Total 4 Threads, but 3 are depending upon 1 to complete and then run all 3*/
 
-
-
-
             /*[2]First Thread should run for 500 milli second alone, after that 2nd thread will join parallel.*/
 
             //t1.Start();

@@ -161,6 +161,12 @@ namespace CSharpCoreConcepts
             Console.WriteLine("roll number of Instance varinstref3:" + varinstref3.rollNumber);
             Console.WriteLine("roll number of the reference varinstref4:" + varinstref4.rollNumber);
             Console.WriteLine("Thus it proves that Reference varinstref4 and instance varinstref3 consume the same Memory allocation");
+
+            /**/
+            varinstref4.rollNumber = 5;
+            Console.WriteLine("roll number of Instance varinstref3:" + varinstref3.rollNumber);
+            Console.WriteLine("roll number of the reference varinstref4:" + varinstref4.rollNumber);
+            Console.WriteLine("So, even if we have modified Reference varinstref4, it will go and modify Instance variable varinstref4 also, again proving that Reference varinstref4 and instance varinstref3 consume the same Memory allocation");
             Console.ReadLine();
 
 

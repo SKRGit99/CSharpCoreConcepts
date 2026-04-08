@@ -109,7 +109,10 @@ namespace CSharpCoreConcepts
         /*It is Non-Static or Instance Variable*/
         int rollNumber;
 
-        /*Static Variable as declared with static modifier*/
+        /*Static Variable as declared with static modifier
+         Remember there is a difference between Initialization of Variable and Assignment of Value.
+         Here the Static variable got initialized even without creation of Instances.
+         */
         static int batchID = 10;
 
         /*We have initialized the Constant variable at the time of Declaration only as it can not be modifed once it has been declared throughout the program.*/
@@ -123,7 +126,7 @@ namespace CSharpCoreConcepts
         public TypesOfVariablesInClass()
         {
             this.rollNumber = 10;
-            batchID = 20; /*We are modifying Static Variable*/
+            batchID = 20; /*We are modifying Static Variable through value assignment.*/
 
             /*If we go to modify Constant variable ,It will throw error.
              
@@ -157,6 +160,7 @@ namespace CSharpCoreConcepts
             Console.WriteLine("Class Number:" + classNumber);
             Console.WriteLine("Class Number {0}", classNumber);
             Console.WriteLine(classNumber);
+            Console.WriteLine($"Class Number : {classNumber}");
 
             /*Here we can straightway print the Value of Static Variable 'batchID' and CONST variable 'schoolName'
             i.e. We did not have to create an Instance of the Class to access the 'Static' and 'Constant Variables'.
@@ -200,7 +204,7 @@ namespace CSharpCoreConcepts
 
             /*More Over ,If you want to Initialize the Static Variable through Instance it will not be possible as when you type "typeVar." to access static variable it will not Come Up.
             It will throw an error. 
-            Hence we can can Initialize Static variables through Instance Creation.
+            Hence, we can Initialize Static variables through Instance Creation.
             Static variables get initialized as the first line of code which gets execution as soon as Class is executed.
 
             Console.WriteLine("Batch ID:" +typevar.batchID);
@@ -217,7 +221,8 @@ namespace CSharpCoreConcepts
             TypesOfVariablesInClass typevVar2 = new TypesOfVariablesInClass();
 
 
-            /*In the above code since two Instances are created ,so there shall be Two times Memory allocation and Hence,Initialization of Instance Variable "rollNumber".
+            /*In the above code since two Instances are created ,so there shall be Two times Memory allocation and 
+             *Hence,Initialization of Instance Variable "rollNumber".
               But both of them shall have the same value as they are Initialized here only through Creating an Instance.
 
             */

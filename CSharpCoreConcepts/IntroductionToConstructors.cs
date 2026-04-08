@@ -18,8 +18,8 @@ namespace CSharpCoreConcepts
         */
 
         int rollNumber;
-        string nameOfStudent;
-        object detailsOfStudent;
+        string? nameOfStudent;
+        object? detailsOfStudent;
         bool registeredStudent;
 
         /*

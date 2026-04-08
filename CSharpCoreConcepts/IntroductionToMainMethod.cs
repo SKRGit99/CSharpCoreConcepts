@@ -10,8 +10,11 @@ namespace CSharpCoreConcepts
     {
         /*
                 Here also we have defined one 'Main()' Method.
+
                 Main method is actually an entry point.
+
                 Main method is already defined in Program.cs.
+
                 Since one project can have "Only One" Entry point, Hence we need to go and tell Visual Studio which Class we want to execute 
                 i.e.Main() Method.
 
@@ -25,7 +28,7 @@ namespace CSharpCoreConcepts
 
                 static void main(string[] args)
                 {
-                Console.WriteLine("C# is Case Sensitive");
+                    Console.WriteLine("C# is Case Sensitive");
                 }
 
              
@@ -34,28 +37,16 @@ namespace CSharpCoreConcepts
 
                 public void explainMainMethod()
                 {
-                    Console.WriteLine("This is the explanation to the Main method.");
-                    //Console.ReadLine();
+                    Console.WriteLine($"This is the explanation to the Main method.");
+                    
                 }
                 static void Main(string[] args)
                 {
                     Console.WriteLine("This is Demo for Setting StartUp Object for the Main Method Execution");
                     IntroductionToMainMethod mainMethod = new IntroductionToMainMethod();
                     mainMethod.explainMainMethod();
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    Console.ReadKey();
+                }
 
 
     }

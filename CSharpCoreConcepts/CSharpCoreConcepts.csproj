@@ -5,7 +5,11 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharpCoreConcepts.DelegateDemo</StartupObject>
+    <StartupObject>CSharpCoreConcepts.AccessSpecifiersInheritance</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.8" />
+  </ItemGroup>
 
 </Project>

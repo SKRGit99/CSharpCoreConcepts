@@ -68,9 +68,11 @@ namespace CSharpCoreConcepts
         {
             NumberChanger nc1 = new NumberChanger(AddNum);
             NumberChanger nc2 = new NumberChanger(MultNum);
+
             //calling the methods using the delegate objects
             nc1(25);
             Console.WriteLine("Value of Num: {0}", getNum());
+
             nc2(5);
             Console.WriteLine("Value of Num: {0}", getNum());
 

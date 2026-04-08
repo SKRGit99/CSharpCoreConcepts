@@ -7,19 +7,17 @@ using System.Threading.Tasks;
 namespace CSharpCoreConcepts
 {
     /*
-    Topics Covered: 
+        Topics Covered: 
 
-    [a] what are 'using' statemnets?
-    [b] what is a namespace?
-    [c] what is .NET?
-    [d] what is c#? Features of C#.
-    [e] what is Visual Studio IDE
-    [f] difference between Project and Solution
-    [g] steps to execute code
+        [a] what are 'using' statemnets?
+        [b] what is a namespace?
+        [c] what is .NET?
+        [d] what is c#? Features of C#.
+        [e] what is Visual Studio IDE
+        [f] difference between Project and Solution
+        [g] steps to execute code
 
-*/
-
-    /* 
+    
     
       [a] what are using statemnets?
           using System;
@@ -35,24 +33,20 @@ namespace CSharpCoreConcepts
           e.g. 'System' Namespace has hundreds of Classes defined under it and it is important for us to use these Namespaces.
           System and various other packages here actually provide us the ability to import classes predefined under them.
 
-    */
+    
+            [b] what is a namespace?
+                namespace is a 'logical' Container of 'Types'.
+                It is called Logical Container because it does not have a Physical Existence.
+                Generally we use it for Grouping the Items. 
+                e.g. Folders in our Operating Systems are Containers for Storing Files.
+                Files have Physical Existence but are grouped inside Folders.
+                Similarly Our .NET Programming Languages are provided with Logical Containers called 'Namespace'.
+                Suppose we have Ten Classes in our Project, we can group it into Two Containers.
 
-    /*
-        [b] what is a namespace?
-            namespace is a 'logical' Container of 'Types'.
-            It is called Logical Container because it does not have a Physical Existence.
-            Generally we use it for Grouping the Items. 
-            e.g. Folders in our Operating Systems are Containers for Storing Files.
-            Files have Physical Existence but are grouped inside Folders.
-            Similarly Our .NET Programming Languages are provided with Logical Containers called 'Namespace'.
-            Suppose we have Ten Classes in our Project, we can group it into Two Containers.
+                So we can group five-five classes under Two Namespaces.
+                By default the name of Namespace is Project name itself but we can change that also.
 
-            So we can group five-five classes under Two Namespaces.
-            By default the name of Namespace is Project name itself but we can change that also.
-
-    */
-
-    /*
+   
             [c] What is .NET ? 
                 According to Microsoft,we do not have a full form for this .NET and 
                 also we do not have any standard definition for this Particular .NET
@@ -77,7 +71,7 @@ namespace CSharpCoreConcepts
                     The main strength of Object Oriented Programming is "Security" and "ReUsability".
 
                     -> It is Platform Independent.
-                    i.e. The Applications dveloped on C# can be run on multiple Platforms.
+                    i.e. The Applications developed on C# can be run on multiple Platforms.
                     e.g. The Current Version of .NET ,there is "direct" support for building our 
                     C# Applications to run on Windows, Android Phones as well as IPhones.
 
@@ -105,7 +99,7 @@ namespace CSharpCoreConcepts
                 Solution Explorer is actually a collection of various projects.
                 Solution Explorer can have one or more than one Projects.
                 Solution Explorer Window gives us the Entire Application.
-                So, Soltion Explorer is the "Root" Element under which we have Projects.
+                So, Solution Explorer is the "Root" Element under which we have Projects.
 
                 Project
                 =======
@@ -121,12 +115,14 @@ namespace CSharpCoreConcepts
 
        */
 
-    internal class CSharpIntroduction
+
+    
+    public class CSharpIntroduction //Class: related Data and functionalities together for Security.
     {
         public void definitionOfNameSpace()
         {
             Console.WriteLine("This is the Introduction Class for CSharp OOPS Concepts and .NET Core");
-            Console.WriteLine("Concepts covered: using Statements");
+            Console.WriteLine($"Concepts covered: using Statements");
             Console.WriteLine("namespace");
             Console.WriteLine("definition of .NET");
             Console.WriteLine("features of C#");
@@ -135,23 +131,34 @@ namespace CSharpCoreConcepts
 
         public void DifferencebetweenReadKeyReadLine()
         {
-            Console.WriteLine("This is method calling for ReadLine");
-            Console.ReadLine();
+            Console.WriteLine("Demo of implementation of ReadLine Method in C#");
+            Console.WriteLine("Enter Your Name");
+            string? inputString = Console.ReadLine();
+            Console.WriteLine("Implementation of ReadLine Command is:"+ inputString);
 
 
         }
 
-        public void DifferencebetweenReadKeyReadLine1()
+        
+          
+        public void DifferencebetweenReadKeyReadLine1() //If you want to hold the Output then use the ReadKey()
         {
-            Console.WriteLine("This is method calling for ReadKey");
-            Console.ReadKey();
+            Console.WriteLine("Demo of implementation of ReadKey Method in C#");
+            Console.WriteLine("Press any key to continue...");
+            ConsoleKeyInfo keyInfo = Console.ReadKey();
+            Console.WriteLine("Implementation of ReadKey Command is:" + keyInfo.KeyChar);
+            Console.WriteLine($"You pressed: {keyInfo.KeyChar}");
+
+
         }
 
         static void Main(string[] args)
         {
             CSharpIntroduction introclass = new CSharpIntroduction();
+            
             introclass.definitionOfNameSpace();
-            introclass.DifferencebetweenReadKeyReadLine();
+            
+            //introclass.DifferencebetweenReadKeyReadLine();
 
             /*
               After using ReadLine(), The next Method DifferencebetweenReadKeyReadLine1() will not be called.
@@ -162,4 +169,9 @@ namespace CSharpCoreConcepts
         }
 
     }
+
+   
+
+
+
 }
