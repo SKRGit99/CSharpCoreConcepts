@@ -15,7 +15,7 @@ namespace CSharpCoreConcepts
 
                 Main method is already defined in Program.cs.
 
-                Since one project can have "Only One" Entry point, Hence we need to go and tell Visual Studio which Class we want to execute 
+                Since one project can have 'Only One' Entry point, Hence we need to go and tell Visual Studio which Class we want to execute 
                 i.e.Main() Method.
 
                 For this Go to -> Solution Explorer -> Properties -> Double Click -> StartUp Object -> Choose the Start Up Object -> F5
@@ -24,6 +24,7 @@ namespace CSharpCoreConcepts
                 Hence,remember that Without a 'Main()' method, we can not set up a StartUp Project.
 
                 Below line of code will throw an error because instead of  "Main()" if we write  "main()" then error will be displayed.
+                
                 *we must remember C# is "Case Sensitive"
 
                 static void main(string[] args)

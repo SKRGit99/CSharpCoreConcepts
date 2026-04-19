@@ -40,7 +40,7 @@ namespace CSharpCoreConcepts
                             We can not declare Private on "types".
                             e.g. We can not declare 'Class' as 'Private'.
 
-                Protected : These fields are accessible In Child Class but not in Non-Child Classes 
+                Protected : These fields are accessible Only In Child Class and not in Non-Child Classes 
                             i.e. Without Inheritance Not accessible Outside the Class.
 
                             Example: Properties 'SchoolID', 'SchoolCode', 'RegistrationNumber' are Protected.
@@ -55,7 +55,7 @@ namespace CSharpCoreConcepts
                 [Ans] No. we can not declare Protected on Classes.
 
                 Internal :  Accessible only within the same assembly (project).
-                            A member declared Internal is accessible only within the Project in Child Class as well as Non Child Class.
+                            A member declared Internal is accessible only within the Project i.e. In Child Class as well as Non Child Class.
                             It shall not be accessible from Outside the Project.
                             
                             Example:  Property 'IsSchoolRegistered' is Internal.
@@ -352,6 +352,16 @@ namespace CSharpCoreConcepts
                     }
                 }
 
+                string _studentFullName = string.Empty;
+                public string StudentFullName
+                {
+                    get { return _studentFullName; }
+                    set
+                    {
+                        _studentFullName = value;
+                    }
+                }
+
                 int _studentID;
                 internal int StudentID
                 {
@@ -447,6 +457,13 @@ namespace CSharpCoreConcepts
                 {
                     get { return _studentAddressLine2; }
                     set { _studentAddressLine2 = value; }
+                }
+
+                string _studentFullAddress = string.Empty;
+                protected string StudentFullAddress
+                {
+                    get { return _studentFullAddress; }
+                    set { _studentFullAddress = value; }
                 }
 
                 string _studentCity = string.Empty;
@@ -556,6 +573,17 @@ namespace CSharpCoreConcepts
                     }
 
 
+                }
+
+                string _FacultyFullName = string.Empty;
+                internal string FacultyFullName
+                {
+                    get { return _FacultyFullName; }
+                    set
+                    {
+                        _FacultyFullName = value;
+
+                    }
                 }
 
                 int _FacultyDepartmentID;
@@ -724,7 +752,7 @@ namespace CSharpCoreConcepts
                 }
                 
                 
-    //Private method: Can be callled from Child classes as well.
+    //Private method: Can be called from Child classes as well.
                 void accessPrivateMethodsOfParentClassInChildClass()
                 {
                     
@@ -737,7 +765,7 @@ namespace CSharpCoreConcepts
                 }
 
 
-    //Protected method: Can be callled from Child classes as well.
+    //Protected method: Can be called from Child classes as well.
                 protected void acccessProtecetdMethodsOfParentClassInChildClass()
                 {
             

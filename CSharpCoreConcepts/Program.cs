@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
 
-        /*
+    /*
         This Program.cs is the middleware entry point here. 
 
         Middleware is always the entry point.
@@ -15,7 +15,7 @@
 
         e.g. Implementing Auhtentication and Authorization to reject Anonymous requests.
  
-        */
+    */
 
 
 
