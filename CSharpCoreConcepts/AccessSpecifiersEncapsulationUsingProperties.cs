@@ -123,7 +123,7 @@ namespace CSharpCoreConcepts
 
         */
 
-    /*School Details*/
+        /*School Details*/
 
                 static int _schoolID = 20;  // _schoolID is a Field. Declared this as Static Varriable since it's value would be almost constant.
                 protected int SchoolID     // SchoolID is Property. SchoolID should not be publicly accessible. It should be inherited only in the Child Classes.

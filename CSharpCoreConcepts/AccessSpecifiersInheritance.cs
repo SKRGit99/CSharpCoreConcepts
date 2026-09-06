@@ -19,6 +19,8 @@ namespace CSharpCoreConcepts
 
             Benefits of Inheritance is that we can directly start Consuming protected, internal, protected internal fields of the Parent class into Child Class Methods.
 
+            Very Important Point:
+        
             We can not use them as Local variabels of the Child Class.
 
             _schoolName = ""; - - This will not exist in the Currrent context.
