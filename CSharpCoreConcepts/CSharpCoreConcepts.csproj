@@ -5,7 +5,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>CSharpCoreConcepts.PrintArea</StartupObject>
+    <StartupObject>CSharpCoreConcepts.Department</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
